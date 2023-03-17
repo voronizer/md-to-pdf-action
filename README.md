@@ -20,3 +20,5 @@ Based on [Markdown to PDF](https://github.com/simonhaenisch/md-to-pdf) library.
     input-file: 'Readme.md'
     output-file: 'Readme.pdf'
 ```
+
+More detailed [see](./.github/workflows/test-run.yml).
