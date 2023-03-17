@@ -1,24 +1,24 @@
-name: Generate doc test
-
-on:
-  push:
-   
-jobs:
-  convert:
-    name: Build PDF
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: 'npm'
-      - run: npm install
-      - uses: voronizer/md-to-pdf-action@1
-        with:
-          input-file: 'README.md'
-          output-file: 'README.pdf'
-      - uses: actions/upload-artifact@v3
-        with:
-          name: README.pdf
-          path: README.pdf
+#name: Generate doc test
+#
+#on:
+#  push:
+#   
+#jobs:
+#  convert:
+#    name: Build PDF
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v3
+#      - uses: actions/setup-node@v3
+#        with:
+#          node-version: 18
+#          cache: 'npm'
+#      - run: npm install
+#      - uses: voronizer/md-to-pdf-action@1
+#        with:
+#          input-file: 'README.md'
+#          output-file: 'README.pdf'
+#      - uses: actions/upload-artifact@v3
+#        with:
+#          name: README.pdf
+#          path: README.pdf
