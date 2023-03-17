@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: voronizer/md-to-pdf-action
+      - uses: voronizer/md-to-pdf-action@1
         with:
           input-file: 'README.md'
           output-file: 'README.pdf'
