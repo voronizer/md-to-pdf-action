@@ -15,8 +15,8 @@ Based on [Markdown to PDF](https://github.com/simonhaenisch/md-to-pdf) library.
 ## Example usage
 
 ```yaml
-uses: voronizer/md-to-pdf-action
-with:
-  input-file: 'readme.md'
-  output-file: 'readme.pdf'
+- uses: voronizer/md-to-pdf-action
+  with:
+    input-file: 'readme.md'
+    output-file: 'readme.pdf'
 ```
