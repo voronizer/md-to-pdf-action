@@ -1,0 +1,12 @@
+name: 'Markdown to PDF converter'
+description: 'Markdown to PDF action for GitHub'
+inputs:
+  input-file:
+    description: 'File to process'
+    required: true
+  output-file:
+    description: 'Result file name'
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

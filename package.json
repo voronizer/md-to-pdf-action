@@ -1,0 +1,20 @@
+{
+  "name": "md-to-pdf-action",
+  "version": "1.0.0",
+  "description": "Based on [Markdown to PDF](https://github.com/simonhaenisch/md-to-pdf) library.",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "ncc build index.js -o dist --source-map --license licenses.txt"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1",
+    "md-to-pdf": "^5.2.3"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.36.1"
+  }
+}
