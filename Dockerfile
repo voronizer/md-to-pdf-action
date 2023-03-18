@@ -1,4 +1,4 @@
-FROM node:18
+FROM node:19-alpine
 
 COPY package.json /
 COPY package-lock.json /
@@ -6,6 +6,6 @@ COPY index.js /
 
 RUN npm ci
 
-RUN chmod +x /index.js
+RUN chmod a+x index.js
 
 CMD ["node", "/index.js"]
