@@ -10,11 +10,11 @@ function getEnvVariable(name){
     return process.env['INPUT_' + name.toUpperCase()];
 }
 
-const fileIn = getEnvVariable('input-file');
-const fileOut = getEnvVariable('output-file');
 
-const pdf = await mdToPdf({path: fileIn}, {dest: fileOut});
-if (pdf) fs.writeFileSync(pdf.filename, pdf.content);
+(async () => {
+    const fileIn = getEnvVariable('input-file');
+    const fileOut = getEnvVariable('output-file');
 
-
-
+    const pdf = await mdToPdf({path: fileIn}, {dest: fileOut});
+    if (pdf) fs.writeFileSync(pdf.filename, pdf.content);
+})();
