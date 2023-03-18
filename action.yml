@@ -12,6 +12,6 @@ runs:
 #  main: 'dist/index.js'
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.input-file }}
-    - ${{ inputs.output-file }}
+#  args:
+#    - ${{ inputs.input-file }}
+#    - ${{ inputs.output-file }}
