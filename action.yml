@@ -8,10 +8,5 @@ inputs:
     description: 'Result file name'
     required: true
 runs:
-#  using: 'node16'
-#  main: 'dist/index.js'
   using: 'docker'
   image: 'Dockerfile'
-#  args:
-#    - ${{ inputs.input-file }}
-#    - ${{ inputs.output-file }}
