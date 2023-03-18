@@ -1,18 +1,13 @@
-FROM node:18
+FROM node:19-alpine
 
-ENV INPUT_INPUT_FILE ""
-ENV INPUT_OUTPUT_FILE ""
+WORKDIR /src
 
-RUN echo "INPUT_INPUT_FILE = $INPUT_INPUT_FILE"
-RUN echo "INPUT_OUTPUT_FILE = $INPUT_OUTPUT_FILE"
-
-
-COPY package.json /
-COPY package-lock.json /
-COPY index.js /
+COPY package.json package.json
+COPY package-lock.json package-lock.json
+COPY index.js index.js
 
 RUN npm install
 
-RUN chmod +x /index.js
+RUN chmod a+x index.js
 
-CMD [ "/index.js" ]
+CMD [ "index.js" ]

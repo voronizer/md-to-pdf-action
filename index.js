@@ -6,7 +6,7 @@ const {mdToPdf} = require('md-to-pdf');
 const fs = require("fs");
 
 
-function getEnvVariable(name){
+function getEnvVariable(name) {
     return process.env['INPUT_' + name.toUpperCase()];
 }
 
