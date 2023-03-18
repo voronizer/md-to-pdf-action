@@ -5,7 +5,7 @@ COPY package-lock.json /
 COPY index.js /
 
 RUN npm ci
-RUN sudo npm install -g puppeteer --unsafe-perm=true --allow-root
+RUN npm install -g puppeteer --unsafe-perm=true --allow-root
 
 RUN chmod a+x index.js
 
