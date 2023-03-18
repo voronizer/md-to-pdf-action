@@ -1,5 +1,9 @@
 FROM node:18
 
+ENV INPUT_INPUT-FILE ""
+ENV INPUT_OUTPUT-FILE ""
+
+
 COPY package.json /
 COPY package-lock.json /
 COPY index.js /
