@@ -12,8 +12,8 @@ function getEnvVariable(name){
 
 
 (async () => {
-    const fileIn = getEnvVariable('input-file');
-    const fileOut = getEnvVariable('output-file');
+    const fileIn = getEnvVariable('input_file');
+    const fileOut = getEnvVariable('output_file');
 
     const pdf = await mdToPdf({path: fileIn}, {dest: fileOut});
     if (pdf) fs.writeFileSync(pdf.filename, pdf.content);

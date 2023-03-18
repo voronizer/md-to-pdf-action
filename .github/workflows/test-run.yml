@@ -16,8 +16,8 @@ jobs:
       - run: npm install
       - uses: voronizer/md-to-pdf-action@1
         with:
-          input-file: 'README.md'
-          output-file: 'README.pdf'
+          input_file: 'README.md'
+          output_file: 'README.pdf'
       - uses: actions/upload-artifact@v3
         with:
           name: README.pdf

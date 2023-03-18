@@ -1,10 +1,10 @@
 name: 'Markdown to PDF converter'
 description: 'Markdown to PDF action for GitHub'
 inputs:
-  input-file:
+  input_file:
     description: 'File to process'
     required: true
-  output-file:
+  output_file:
     description: 'Result file name'
     required: true
 runs:

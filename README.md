@@ -17,8 +17,8 @@ Based on [Markdown to PDF](https://github.com/simonhaenisch/md-to-pdf) library.
 ```yaml
 - uses: voronizer/md-to-pdf-action
   with:
-    input-file: 'Readme.md'
-    output-file: 'Readme.pdf'
+    input_file: 'Readme.md'
+    output_file: 'Readme.pdf'
 ```
 
 More detailed [see](./.github/workflows/test-run.yml).
